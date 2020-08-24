@@ -1,0 +1,137 @@
+07/10 03:53:24 AM | 
+07/10 03:53:24 AM | Parameters:
+07/10 03:53:24 AM | AUX_WEIGHT=0.4
+07/10 03:53:24 AM | BATCH_SIZE=128
+07/10 03:53:24 AM | CUTOUT_LENGTH=0
+07/10 03:53:24 AM | DATA_LOADER_TYPE=Torch
+07/10 03:53:24 AM | DATA_PATH=data/
+07/10 03:53:24 AM | DATASET=CIFAR10
+07/10 03:53:24 AM | DROP_PATH_PROB=0.2
+07/10 03:53:24 AM | EPOCHS=10
+07/10 03:53:24 AM | FILE=random_darts_architecture.txt
+07/10 03:53:24 AM | FP16=False
+07/10 03:53:24 AM | GENOTYPE=Genotype(normal=[[('max_pool_3x3', 1), ('skip_connect', 0)], [('dil_conv_3x3', 0), ('skip_connect', 1)], [('dil_conv_3x3', 1), ('dil_conv_5x5', 2)], [('sep_conv_3x3', 2), ('dil_conv_3x3', 1)]], normal_concat=range(2, 6), reduce=[[('avg_pool_3x3', 0), ('dil_conv_3x3', 1)], [('dil_conv_3x3', 0), ('dil_conv_5x5', 1)], [('avg_pool_3x3', 1), ('sep_conv_3x3', 0)], [('dil_conv_5x5', 3), ('dil_conv_3x3', 2)]], reduce_concat=range(2, 6))
+
+07/10 03:53:24 AM | GPUS=[0]
+07/10 03:53:24 AM | GRAD_CLIP=5.0
+07/10 03:53:24 AM | I=0
+07/10 03:53:24 AM | IMAGE_SIZE=16
+07/10 03:53:24 AM | INIT_CHANNELS=8
+07/10 03:53:24 AM | LAYERS=6
+07/10 03:53:24 AM | LR=0.03
+07/10 03:53:24 AM | MOMENTUM=0.9
+07/10 03:53:24 AM | NAME=RS_BPE1
+07/10 03:53:24 AM | PATH=experiment/RS_BPE1/2
+07/10 03:53:24 AM | PRINT_FREQ=200
+07/10 03:53:24 AM | SAVE_DIR=experiment/
+07/10 03:53:24 AM | SAVE_PATH=experiment/
+07/10 03:53:24 AM | SEED=2
+07/10 03:53:24 AM | WEIGHT_DECAY=0.0003
+07/10 03:53:24 AM | WORKERS=4
+07/10 03:53:24 AM | 
+07/10 03:53:24 AM | Logger is set - training start
+07/10 03:53:24 AM | Torch version is: 1.4.0
+07/10 03:53:24 AM | Torch_vision version is: 0.5.0
+07/10 03:53:27 AM | Model size = 0.042 MB
+07/10 03:53:35 AM | Create model with Full-float data
+07/10 03:53:35 AM | Epoch 0 LR 0.029265847744427302
+07/10 03:53:36 AM | Train: [  1/10] Step 000/390 Loss 3.313 Prec@(1,5) (10.2%, 54.7%)
+07/10 03:54:25 AM | Train: [  1/10] Step 200/390 Loss 2.434 Prec@(1,5) (35.3%, 86.2%)
+07/10 03:55:12 AM | Train: [  1/10] Step 390/390 Loss 2.272 Prec@(1,5) (40.2%, 88.9%)
+07/10 03:55:13 AM | train steps: 390
+07/10 03:55:13 AM | Train: [  1/10] Final Prec@1 40.2300%
+07/10 03:55:13 AM | Valid: [  1/10] Step 000/078 Loss 1.246 Prec@(1,5) (55.5%, 93.0%)
+07/10 03:55:16 AM | Valid: [  1/10] Step 078/078 Loss 1.374 Prec@(1,5) (49.5%, 93.3%)
+07/10 03:55:16 AM | valid steps: 78
+07/10 03:55:16 AM | Valid: [  1/10] Final Prec@1 49.5200%
+07/10 03:55:17 AM | Epoch 1 LR 0.02713525491562421
+07/10 03:55:18 AM | Train: [  2/10] Step 000/390 Loss 2.066 Prec@(1,5) (50.0%, 87.5%)
+07/10 03:56:09 AM | Train: [  2/10] Step 200/390 Loss 1.980 Prec@(1,5) (49.3%, 92.6%)
+07/10 03:56:57 AM | Train: [  2/10] Step 390/390 Loss 1.935 Prec@(1,5) (50.4%, 93.0%)
+07/10 03:56:57 AM | train steps: 390
+07/10 03:56:57 AM | Train: [  2/10] Final Prec@1 50.3860%
+07/10 03:56:59 AM | Valid: [  2/10] Step 000/078 Loss 1.146 Prec@(1,5) (62.5%, 96.1%)
+07/10 03:57:07 AM | Valid: [  2/10] Step 078/078 Loss 1.229 Prec@(1,5) (55.9%, 95.0%)
+07/10 03:57:07 AM | valid steps: 78
+07/10 03:57:07 AM | Valid: [  2/10] Final Prec@1 55.9200%
+07/10 03:57:08 AM | Epoch 2 LR 0.023816778784387097
+07/10 03:57:09 AM | Train: [  3/10] Step 000/390 Loss 1.733 Prec@(1,5) (57.8%, 95.3%)
+07/10 03:58:00 AM | Train: [  3/10] Step 200/390 Loss 1.830 Prec@(1,5) (53.3%, 94.0%)
+07/10 03:58:47 AM | Train: [  3/10] Step 390/390 Loss 1.810 Prec@(1,5) (53.9%, 94.2%)
+07/10 03:58:47 AM | train steps: 390
+07/10 03:58:47 AM | Train: [  3/10] Final Prec@1 53.8780%
+07/10 03:58:48 AM | Valid: [  3/10] Step 000/078 Loss 1.074 Prec@(1,5) (66.4%, 94.5%)
+07/10 03:58:51 AM | Valid: [  3/10] Step 078/078 Loss 1.178 Prec@(1,5) (57.6%, 95.4%)
+07/10 03:58:51 AM | valid steps: 78
+07/10 03:58:51 AM | Valid: [  3/10] Final Prec@1 57.6300%
+07/10 03:58:52 AM | Epoch 3 LR 0.01963525491562421
+07/10 03:58:52 AM | Train: [  4/10] Step 000/390 Loss 1.780 Prec@(1,5) (53.9%, 92.2%)
+07/10 03:59:45 AM | Train: [  4/10] Step 200/390 Loss 1.736 Prec@(1,5) (56.0%, 94.6%)
+07/10 04:00:34 AM | Train: [  4/10] Step 390/390 Loss 1.722 Prec@(1,5) (56.0%, 94.8%)
+07/10 04:00:34 AM | train steps: 390
+07/10 04:00:34 AM | Train: [  4/10] Final Prec@1 56.0320%
+07/10 04:00:35 AM | Valid: [  4/10] Step 000/078 Loss 0.964 Prec@(1,5) (65.6%, 96.9%)
+07/10 04:00:38 AM | Valid: [  4/10] Step 078/078 Loss 1.121 Prec@(1,5) (60.3%, 95.8%)
+07/10 04:00:38 AM | valid steps: 78
+07/10 04:00:38 AM | Valid: [  4/10] Final Prec@1 60.3400%
+07/10 04:00:38 AM | Epoch 4 LR 0.015
+07/10 04:00:39 AM | Train: [  5/10] Step 000/390 Loss 1.636 Prec@(1,5) (57.8%, 93.8%)
+07/10 04:01:30 AM | Train: [  5/10] Step 200/390 Loss 1.675 Prec@(1,5) (57.3%, 95.2%)
+07/10 04:02:20 AM | Train: [  5/10] Step 390/390 Loss 1.657 Prec@(1,5) (57.7%, 95.4%)
+07/10 04:02:20 AM | train steps: 390
+07/10 04:02:20 AM | Train: [  5/10] Final Prec@1 57.6800%
+07/10 04:02:20 AM | Valid: [  5/10] Step 000/078 Loss 0.949 Prec@(1,5) (64.8%, 97.7%)
+07/10 04:02:22 AM | Valid: [  5/10] Step 078/078 Loss 1.082 Prec@(1,5) (60.9%, 96.5%)
+07/10 04:02:22 AM | valid steps: 78
+07/10 04:02:22 AM | Valid: [  5/10] Final Prec@1 60.8500%
+07/10 04:02:22 AM | Epoch 5 LR 0.01036474508437579
+07/10 04:02:23 AM | Train: [  6/10] Step 000/390 Loss 1.675 Prec@(1,5) (57.8%, 93.0%)
+07/10 04:03:19 AM | Train: [  6/10] Step 200/390 Loss 1.631 Prec@(1,5) (58.7%, 95.4%)
+07/10 04:04:06 AM | Train: [  6/10] Step 390/390 Loss 1.620 Prec@(1,5) (58.6%, 95.6%)
+07/10 04:04:06 AM | train steps: 390
+07/10 04:04:06 AM | Train: [  6/10] Final Prec@1 58.6140%
+07/10 04:04:07 AM | Valid: [  6/10] Step 000/078 Loss 0.878 Prec@(1,5) (68.8%, 96.9%)
+07/10 04:04:10 AM | Valid: [  6/10] Step 078/078 Loss 1.027 Prec@(1,5) (63.4%, 96.7%)
+07/10 04:04:11 AM | valid steps: 78
+07/10 04:04:11 AM | Valid: [  6/10] Final Prec@1 63.3600%
+07/10 04:04:11 AM | Epoch 6 LR 0.006183221215612904
+07/10 04:04:12 AM | Train: [  7/10] Step 000/390 Loss 1.500 Prec@(1,5) (58.6%, 95.3%)
+07/10 04:05:03 AM | Train: [  7/10] Step 200/390 Loss 1.593 Prec@(1,5) (59.3%, 95.7%)
+07/10 04:05:51 AM | Train: [  7/10] Step 390/390 Loss 1.587 Prec@(1,5) (59.5%, 95.6%)
+07/10 04:05:51 AM | train steps: 390
+07/10 04:05:51 AM | Train: [  7/10] Final Prec@1 59.4540%
+07/10 04:05:52 AM | Valid: [  7/10] Step 000/078 Loss 0.888 Prec@(1,5) (72.7%, 99.2%)
+07/10 04:05:55 AM | Valid: [  7/10] Step 078/078 Loss 0.998 Prec@(1,5) (64.4%, 97.0%)
+07/10 04:05:56 AM | valid steps: 78
+07/10 04:05:56 AM | Valid: [  7/10] Final Prec@1 64.4200%
+07/10 04:05:56 AM | Epoch 7 LR 0.00286474508437579
+07/10 04:05:57 AM | Train: [  8/10] Step 000/390 Loss 1.548 Prec@(1,5) (58.6%, 97.7%)
+07/10 04:06:48 AM | Train: [  8/10] Step 200/390 Loss 1.573 Prec@(1,5) (59.7%, 95.9%)
+07/10 04:07:37 AM | Train: [  8/10] Step 390/390 Loss 1.566 Prec@(1,5) (59.8%, 95.8%)
+07/10 04:07:37 AM | train steps: 390
+07/10 04:07:37 AM | Train: [  8/10] Final Prec@1 59.8160%
+07/10 04:07:37 AM | Valid: [  8/10] Step 000/078 Loss 0.880 Prec@(1,5) (72.7%, 99.2%)
+07/10 04:07:41 AM | Valid: [  8/10] Step 078/078 Loss 0.992 Prec@(1,5) (64.3%, 97.0%)
+07/10 04:07:41 AM | valid steps: 78
+07/10 04:07:41 AM | Valid: [  8/10] Final Prec@1 64.3000%
+07/10 04:07:42 AM | Epoch 8 LR 0.000734152255572697
+07/10 04:07:42 AM | Train: [  9/10] Step 000/390 Loss 1.650 Prec@(1,5) (59.4%, 93.8%)
+07/10 04:08:37 AM | Train: [  9/10] Step 200/390 Loss 1.574 Prec@(1,5) (60.0%, 95.8%)
+07/10 04:09:27 AM | Train: [  9/10] Step 390/390 Loss 1.574 Prec@(1,5) (59.8%, 95.8%)
+07/10 04:09:27 AM | train steps: 390
+07/10 04:09:27 AM | Train: [  9/10] Final Prec@1 59.8380%
+07/10 04:09:27 AM | Valid: [  9/10] Step 000/078 Loss 0.840 Prec@(1,5) (74.2%, 96.9%)
+07/10 04:09:31 AM | Valid: [  9/10] Step 078/078 Loss 0.968 Prec@(1,5) (65.7%, 96.9%)
+07/10 04:09:31 AM | valid steps: 78
+07/10 04:09:31 AM | Valid: [  9/10] Final Prec@1 65.7200%
+07/10 04:09:31 AM | Epoch 9 LR 0.0
+07/10 04:09:32 AM | Train: [ 10/10] Step 000/390 Loss 1.634 Prec@(1,5) (61.7%, 94.5%)
+07/10 04:10:24 AM | Train: [ 10/10] Step 200/390 Loss 1.608 Prec@(1,5) (59.2%, 95.5%)
+07/10 04:11:13 AM | Train: [ 10/10] Step 390/390 Loss 1.605 Prec@(1,5) (59.2%, 95.5%)
+07/10 04:11:13 AM | train steps: 390
+07/10 04:11:13 AM | Train: [ 10/10] Final Prec@1 59.2020%
+07/10 04:11:14 AM | Valid: [ 10/10] Step 000/078 Loss 0.841 Prec@(1,5) (75.0%, 96.9%)
+07/10 04:11:17 AM | Valid: [ 10/10] Step 078/078 Loss 0.969 Prec@(1,5) (65.8%, 96.9%)
+07/10 04:11:18 AM | valid steps: 78
+07/10 04:11:18 AM | Valid: [ 10/10] Final Prec@1 65.7600%
+07/10 04:11:18 AM | Final best Prec@1 = 65.7600%

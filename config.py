@@ -104,6 +104,7 @@ class AugmentConfig(BaseConfig):
         parser.add_argument('--save_path', default=None, help='save_path')
         parser.add_argument('--save_dir', default='experiment/', help='save_dir')
         parser.add_argument('--file', default='', help='file_save_')
+        # /home/ubuntu/2_workspace/nni_hpo/3rdparty/rethinking_performance_estimation_in_NAS/random_darts_architecture.txt
         parser.add_argument('--i', type=int,default=0)
 
         return parser
@@ -126,7 +127,9 @@ class AugmentConfig(BaseConfig):
         
         if self.file:
             print('Using multi genotypes from file')
-            file_ = open(self.file)
+            # file_ = open(self.file)
+            file_ = open('/home/ubuntu/2_workspace/nni_hpo/3rdparty/rethinking_performance_estimation_in_NAS/random_darts_architecture.txt')
+
             lines = file_.readlines()
             for i, line in enumerate(lines):
                 self.path = os.path.join(self.save_dir, self.name, str(i))

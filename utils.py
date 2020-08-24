@@ -28,8 +28,10 @@ def get_data(dataset, data_path, input_size, cutout_length, validation):
     trn_data = dset_cls(root=data_path, train=True, download=True, transform=trn_transform)
 
     # assuming shape is NHW or NHWC
-    shape = trn_data.train_data.shape
-    
+    # print(help(trn_data))
+    # shape = trn_data.train_data.shape
+    shape = trn_data.data.shape
+
     input_channels = 3 if len(shape) == 4 else 1
     assert shape[1] == shape[2], "not expected shape = {}".format(shape)
     input_size = shape[1]
